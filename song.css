@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+@keyframes rotates {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	background: transparent url(https://p4.music.126.net/Uyr1zsalqonLPv4QPY9hLw==/109951163655205077.jpg);
+	height: 100vh;
+	background-size: cover;
+
+}
+
+.page:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+
+.page .disc-wrap {
+	position: absolute;
+	width: 26vw;
+	left: 45.5vw;
+	z-index: 4;
+}
+
+.disc {
+	position: relative;
+	height: 80vw;
+	width: 80vw;
+	left:50%;
+	margin-left: -40vw;
+	margin-top: 20vw;
+
+}
+
+
+.disc .disc-ring {
+	position: absolute;
+	width: 78vw;
+	z-index: 2;
+}
+
+.disc .disc-light {
+	position: absolute;
+	width: 78vw;
+	/*border:1px solid red;*/
+	z-index:3;
+	/*animation:  rotates 20s infinite linear;*/
+}
+
+.disc .disc-picture {
+	position: absolute;
+	width: 50vw;
+	left: 50%;
+	top: 50%;
+	margin-top: -25vw;
+	margin-left:-26vw; 
+	z-index: 1;	
+}
+
+.disc .disc-light,
+.disc .disc-picture {
+	animation:  rotates 20s infinite linear ;
+	animation-play-state: running;
+}
+
+.disc.playing .disc-light,
+.disc.playing .disc-picture {
+	animation-play-state: paused;
+}
+
+.disc .icon {
+	position: absolute;
+	background: rgb(0, 0, 0, 0.5);
+	border-radius: 50%;
+	width: 20vw;
+	height: 20vw;
+	left: 50%;
+	margin-left: -10vw;
+	top:50%;
+	margin-top: -10vw;
+	fill: white;
+	z-index: 4;
+}
+
+.disc .icon-play {
+	display: none;
+}
+
+.disc.playing .icon-pause {
+	display: none;
+
+}
+
+.disc.playing .icon-play {
+	display: block;
+}
+
+.song-description {
+	text-align: center;
+	z-index: 1;
+}
+
+.song-description > h2 {
+	color: #fff;
+}
+.lyric {
+	/*border: 1px solid red;*/
+	overflow: hidden;
+	text-align: center;
+	color:white;
+	z-index: 1;
+}
+
+.lyric .show {
+	/*border: 1px solid ;*/
+	height: 100px;
+	
+	line-height: 2;
+	transition: transform 0.3s;
+}
+
+.links {
+	text-align: center;
+	margin-top: 31vw;
+	z-index: 1;
+}
+
+.links .open,
+.links .down {
+	border: 1px solid #D43B32;
+	padding: 1.5vw 18vw;
+	border-radius: 10vw;
+	font-size: 20px;
+	margin: 1vw;
+}
+
+.links .open {
+	color:#D43B32;
+}
+
+.links .down {
+	color: white;
+	background: #D43B32;
+}
+
+.page .u-svg {
+	position: absolute;
+	width: 26vw;
+	height: 6vw;
+	left: 2vw;
+	top:2vw;
+	z-index: 2;
+}
+
+

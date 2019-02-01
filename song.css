@@ -45,18 +45,11 @@ a {
 }
 
 .disc {
-	position: relative;
-	height: 80vw;
-	width: 80vw;
-	left:50%;
-	margin-left: -40vw;
-	margin-top: 20vw;
-
+	position: absolute;
 }
 
 
 .disc .disc-ring {
-	position: absolute;
 	width: 78vw;
 	z-index: 2;
 }
@@ -72,10 +65,6 @@ a {
 .disc .disc-picture {
 	position: absolute;
 	width: 50vw;
-	left: 50%;
-	top: 50%;
-	margin-top: -25vw;
-	margin-left:-25vw; 
 	z-index: 1;	
 }
 
@@ -117,8 +106,26 @@ a {
 	display: block;
 }
 
+.disc .disc-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 19vw;
+}
+
+.disc .plays {
+	position:absolute;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+
+}
+	
+
 .song-description {
 	text-align: center;
+	flex-grow: 1;
+	margin-top: 20px;
 	z-index: 1;
 }
 
@@ -142,18 +149,22 @@ a {
 }
 
 .links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
-	margin-top: 31vw;
 	z-index: 1;
 }
 
 .links .open,
 .links .down {
+	width: 38.5vw;
 	border: 1px solid #D43B32;
-	padding: 1.5vw 18vw;
+	padding: 1.5vw;
 	border-radius: 10vw;
 	font-size: 4.5vw;
-	margin: 1vw;
+	margin: 5vw;
+	letter-spacing: 1vw;
 }
 
 .links .open {

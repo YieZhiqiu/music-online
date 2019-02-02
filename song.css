@@ -48,6 +48,12 @@ a {
 	position: absolute;
 }
 
+.disc:after {
+	content: '';
+	display: block;
+	clear:both;
+}
+
 
 .disc .disc-ring {
 	width: 78vw;

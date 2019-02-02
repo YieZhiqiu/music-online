@@ -108,7 +108,7 @@ $(function(){
 		$('.page').attr('style','background-image: url("' + backgroundUrl + '")')
 		
 		
-        $('.disc > .disc-picture').attr('src', img)
+        $('.disc > 。disc-container > .disc-picture').attr('src', img)
 
 		$('.song-description > h2').text(name) 
 		parseLyric(lyric)

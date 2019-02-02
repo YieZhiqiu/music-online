@@ -26,7 +26,7 @@ a {
 
 }
 
-.page:after {
+/*.page:after {
     content: " ";
     position: absolute;
     left: 0;
@@ -34,7 +34,7 @@ a {
     bottom: 0;
     top: 0;
     background-color: rgba(0,0,0,.5);
-}
+}*/
 
 
 .page .disc-wrap {
